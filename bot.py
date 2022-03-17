@@ -7,3 +7,10 @@ Bot = Client(
     bot_token="5221793107:AAGzaFdLJoZIBmKB1MeOLJCJRfK0rFfYkVg", 
     plugins=dict(root="ADV_GUARDIAN_GROOT")
 )
+
+
+
+
+
+
+Bot.run()
