@@ -4,7 +4,7 @@ from pyrogram.types import CallbackQuery
 import random
 
 
-@PyrogramBot.on_callback_query()
+@Client.on_callback_query()
 async def callback(bot, msg):
     if msg.data == "start":
         await msg.message.edit(
