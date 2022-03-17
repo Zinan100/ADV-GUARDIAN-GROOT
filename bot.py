@@ -2,8 +2,8 @@ from pyrogram import client
 
 
 bot=client(
-    api_id="api id"
-    api_hash="api hash"
-    bot_token="bot token"
-    plugins="
+    api_hash="api hasj", 
+    api_id="api id", 
+    bot_token="bot token", 
+    plugins=dict(root="ADV_GUARDIAN_GROOT")
 )
