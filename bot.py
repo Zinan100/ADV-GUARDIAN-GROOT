@@ -14,4 +14,4 @@ PyrogramBot = Client(
 
 
 
-Bot.run()
+PyrogramBot.run()
