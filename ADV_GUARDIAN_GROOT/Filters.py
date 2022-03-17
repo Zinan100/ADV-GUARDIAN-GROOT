@@ -17,7 +17,7 @@ async def regex(bot, msg):
 🔊 Languages : #Malayalam HD
 💃🏻 Cast : Antony Varghese,  Arjun Asokan,  Mamitha Baiju,  Vineeth Vishwam,  Anaswara Rajan, 
 
-›› Download ›"""
+›› Download ›""",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("♀️ 𝘿𝙊𝙒𝙇𝙊𝘼𝘿 ♀️", url="https://t.me/Rexer0BOT_BOT?start=BATCH-BQADBQAD7AMAAj7cWFUaUL9p5lhGdRYE")
            ]]
