@@ -1,7 +1,7 @@
 from program import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
-
-
+from pyrogram.types import CallbackQuery
+import random
 
 
 @Cient.on_callback_query()
