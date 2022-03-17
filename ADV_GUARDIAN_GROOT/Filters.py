@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 
 
-@Client.on_message(filters.regex("Super shranya" | filters.regex "super sharanya" | filters.regex "Super Sharanya"))
+@Client.on_message(filters.regex("Super shranya"))
 async def regex(bot, msg):
     await msg.reply_photo(
         photo="https://telegra.ph/file/ab6d292895350fc995414.jpg",
