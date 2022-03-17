@@ -14,7 +14,8 @@ async def callback(bot, msg):
         await msg.message.edit(
             text=START_MESSAGE.format(msg.from_user.mention),
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("𝐂𝐑𝐄𝐀𝐓𝐎𝐑 🔰", url="https://t.me/Zinan00100"),
+                InlineKeyboardButton("𝐂𝐑𝐄𝐀𝐓𝐎𝐑 🔰", url="https://t.me/Zinan00100")
+                ],[
                 InlineKeyboardButton("💢 𝐌𝐎𝐕𝐈𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏💢", url="https://t.me/moviespot001100")
                 ],[
                 InlineKeyboardButton("📚 𝐇𝐄𝐋𝐏 📚", callback_data="help"), 
