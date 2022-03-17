@@ -37,8 +37,8 @@ async def callback(bot, msg):
         await msg.message.edit(
             text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>
 """,
-            reply_markup=InlineKeyboardMarkup
-                InlineKeyboardButton("𝙸𝙳", callback_data="info")
+            reply_markup=InlineKeyboardMarkupInlineKeyboardMarkup( [[
+                InlineKeyboardButton("𝙸𝙳", callback_data="info"), 
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
                ) 
