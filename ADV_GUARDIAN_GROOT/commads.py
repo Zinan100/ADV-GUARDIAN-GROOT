@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
  
 
-@PyrogramBot.on_message(filters.command("start"))
+@Client.on_message(filters.command("start"))
 async def start_msg(bot, msg):
     await msg.reply_photo(
         photo="https://telegra.ph/file/cfcb2df74d7ac1e022084.jpg",
