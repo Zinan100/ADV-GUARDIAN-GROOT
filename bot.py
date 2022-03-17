@@ -1,5 +1,4 @@
 from pyrogram import Client
-from database.users_chats_db import db
 
 
 PyrogramBot = Client(
