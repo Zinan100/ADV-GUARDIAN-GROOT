@@ -6,16 +6,16 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-    BUTTONS = InlineKeyboardMarkup( [[
-        InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/crimebhavani4')
-       ]]
-    )
+    
 
 
 @Client.on_message(filters.command("covid"))
 async def reply_info(bot, update):
     query = update.text.split(None, 1)[1]
-    reply_markup = BUTTONS
+    reply_markup = InlineKeyboardMarkup( [[
+        InlineKeyboardButton("support us", url="https://t.me/moviespot00100")
+       ]]
+       )
     await update.reply_text(
         text=covid_info(query),
         disable_web_page_preview=True,
