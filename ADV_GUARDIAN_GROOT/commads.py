@@ -24,7 +24,7 @@ async def start_msg(bot, msg):
 @Client.on_message(filters.private & filters.command("id"))
 async def id_msg(bot, msg):
     await msg.reply_photo(
-        photo=random.choice(All_Pic),
+        photo={msg.from_user.photo},
         caption= f"""
 First Name : <code>{msg.from_user.first_name}</code>
 Last Name : <code>{msg.from_user.last_name}</code>
@@ -35,7 +35,8 @@ User ID : <code>{msg.from_user.id}</code>
 
 @Client.on_message(filters.group & filters.command("id"))
 async def id_msg(bot, msg):
-    await msg.reply_text(
+    await msg.reply_photo(
+        photo={msg.chat.photo},
         text= f"""
 Group Name : {msg.chat.title}
 Group Username : @{msg.chat.username}
