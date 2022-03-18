@@ -40,7 +40,7 @@ async def callback(bot, msg):
 """,
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙸𝙳", callback_data="info"),
-                InlineKeyboardButton("📸TELEGRA.PH📸" callback_data="tgra")
+                InlineKeyboardButton("📸𝚃𝙴𝙻𝙴𝙶𝚁𝙰.𝙿𝙷📸", callback_data="tgra")
                 ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
