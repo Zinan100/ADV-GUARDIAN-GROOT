@@ -63,7 +63,7 @@ NOTE:
 • This Command Can be used by everyone
 """,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("𝙱𝙰𝙲𝙺" callback_data="help")
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
                )
         )
