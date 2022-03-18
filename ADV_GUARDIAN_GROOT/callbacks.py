@@ -47,7 +47,7 @@ async def callback(bot, msg):
                ) 
         )
 
-    elif msg.data == "tgra"
+    elif msg.data == "tgra":
         await msg.message.edit(
             text="""▫️HELP: Telegraph▪️
 
@@ -68,7 +68,7 @@ NOTE:
                )
         )
 
-    elif msg.data == "cov"
+    elif msg.data == "cov":
         await msg.message.edit(
             text="""➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
 
