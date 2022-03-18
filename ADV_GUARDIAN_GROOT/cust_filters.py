@@ -1,12 +1,12 @@
 import re
 from typing import Optional
 
-import telegram
-from telegram import ParseMode, InlineKeyboardMarkup, Message, Chat, InlineKeyboardButton
-from telegram import Update, Bot
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async, Filters, CallbackQueryHandler
-from telegram.utils.helpers import escape_markdown
+import pyrogram 
+from pyrogram import ParseMode, InlineKeyboardMarkup, Message, Chat, InlineKeyboardButton
+from pyrogram import Update, Bot
+from pyrogram.error import BadRequest
+from pyrogram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async, Filters, CallbackQueryHandler
+from pyrogram.utils.helpers import escape_markdown
 
 from tg_bot import dispatcher, LOGGER, BMERNU_SCUT_SRELFTI, SUDO_USERS
 from tg_bot.modules.disable import DisableAbleCommandHandler
