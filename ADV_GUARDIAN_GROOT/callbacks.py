@@ -60,7 +60,8 @@ USAGE:
 NOTE:
 
 • This Command Is Available in goups and pms
-• This Command Can be used by everyone""",
+• This Command Can be used by everyone
+""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺" callback_data="help")
                ]]
@@ -78,7 +79,8 @@ NOTE:
 ➪ /covid - 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾 𝗍𝗈 𝗀𝖾𝗍 𝖼𝗈𝗏𝗂𝖽𝖾 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/covid 𝖨𝗇𝖽𝗂𝖺""",
+/covid 𝖨𝗇𝖽𝗂𝖺
+""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
