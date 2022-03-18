@@ -42,6 +42,8 @@ async def callback(bot, msg):
                 InlineKeyboardButton("𝙸𝙳", callback_data="info"),
                 InlineKeyboardButton("📸𝚃𝙴𝙻𝙴𝙶𝚁𝙰.𝙿𝙷📸", callback_data="tgra")
                 ],[
+                InlineKeyboardButton("🤒covid", callback_data="cov")
+                ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
                ) 
