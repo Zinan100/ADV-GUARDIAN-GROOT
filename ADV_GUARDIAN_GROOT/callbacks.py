@@ -39,10 +39,50 @@ async def callback(bot, msg):
             text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>
 """,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("𝙸𝙳", callback_data="info"), 
+                InlineKeyboardButton("𝙸𝙳", callback_data="info"),
+                InlineKeyboardButton("📸TELEGRA.PH📸" callback_data="tgra")
+                ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
                ) 
-        ) 
+        )
 
+    elif msg.data == "tgra"
+        await msg.message.edit(
+            text="""▫️HELP: Telegraph▪️
+
+Do as you wish with telegra.ph module!
+
+USAGE:
+
+🤧 /telegraph - Send me Picture or Vide Under (5MB)
+
+NOTE:
+
+• This Command Is Available in goups and pms
+• This Command Can be used by everyone""",
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺" callback_data="help")
+               ]]
+               )
+        )
+
+    elif msg.data == "cov"
+        await msg.message.edit(
+            text="""➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
+
+𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚍𝚊𝚒𝚕𝚢 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚌𝚘𝚟𝚒𝚍 
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+
+➪ /covid - 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾 𝗍𝗈 𝗀𝖾𝗍 𝖼𝗈𝗏𝗂𝖽𝖾 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇
+
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+/covid 𝖨𝗇𝖽𝗂𝖺""",
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
+               ]]
+               )
+        )
+ 
              
