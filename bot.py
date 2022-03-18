@@ -1,5 +1,5 @@
 from pyrogram import Client
-import pymongo
+from database import pymongo
 
 
 PyrogramBot = Client(
