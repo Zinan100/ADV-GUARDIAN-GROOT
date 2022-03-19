@@ -54,15 +54,6 @@ async def callback(bot, msg):
 
     elif msg.data == "help":
         await msg.message.edit(
-            text="▣▢▢"
-         )
-         await msg.message.edit(
-             text="▣▣▢"
-         )
-        await msg.message.edit(
-            text="▣▣▣"
-        )
-        await msg.message.edit(
             text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>""",
 
 
