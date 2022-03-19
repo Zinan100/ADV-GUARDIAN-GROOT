@@ -35,8 +35,18 @@ async def callback(bot, msg):
        
     elif msg.data == "info":
         await msg.message.edit(
+            text="▣▢▢"
+        )
+        await msg.message.edit(
+            text="▣▣▢"
+        )
+        await msg.message.edit(
+            text="▣▣▣"
+        )
+        await msg.message.edit(
             text="""Commands and Usage:
 • /id - get id of a specifed""",
+        )
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝚊𝚌𝚔", callback_data="help")
                ]]
@@ -45,8 +55,17 @@ async def callback(bot, msg):
 
     elif msg.data == "help":
         await msg.message.edit(
-            text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>
-""",
+            text="▣▢▢"
+         )
+         await msg.message.edit(
+             text="▣▣▢"
+         )
+        await msg.message.edit(
+            text="▣▣▣"
+        )
+        await msg.message.edit(
+            text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>""",
+        )
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙸𝙳", callback_data="info"),
                 InlineKeyboardButton("📸𝚃𝙴𝙻𝙴𝙶𝚁𝙰.𝙿𝙷📸", callback_data="tgra")
@@ -59,6 +78,15 @@ async def callback(bot, msg):
         )
 
     elif msg.data == "tgra":
+        await msg.message.edit(
+            text="▣▢▢"
+        )
+        await msg.message.edit(
+            text="▣▣▢"
+        )
+        await msg.message.edit(
+            text="▣▣▣"
+        )
         await msg.message.edit(
             text="""▫️HELP: Telegraph▪️
 
@@ -73,6 +101,7 @@ NOTE:
 • This Command Is Available in goups and pms
 • This Command Can be used by everyone
 """,
+        )
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
@@ -80,6 +109,15 @@ NOTE:
         )
 
     elif msg.data == "cov":
+        await msg.message.edit(
+            text="▣▢▢"
+        )
+        await msg.message.edit(
+            text="▣▣▢"
+        )
+        await msg.message.edit(
+            text="▣▣▣"
+        )
         await msg.message.edit(
             text="""➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
 
@@ -92,6 +130,7 @@ NOTE:
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /covid 𝖨𝗇𝖽𝗂𝖺
 """,
+        )
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
