@@ -1,0 +1,46 @@
+{
+    "name": "ADV-GUARDIAN-GROOT",
+    "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
+    "logo": "https://telegra.ph/file/fa9695e18673ee224959b.jpg",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "filter",
+      "indian",
+      "pyrogram"
+    ],
+    "website": "https://github.com/Zinan100/ADV-GUARDIAN-GROOT",
+    "repository": "https://github.com/Zinan100/ADV-GUARDIAN-GROOT",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "DATABASE_URI": {
+            "description": "mongoDB URI.",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB.",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
