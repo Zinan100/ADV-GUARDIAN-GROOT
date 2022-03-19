@@ -14,15 +14,14 @@ async def callback(bot, msg):
         await msg.message.edit_text(
             text="▣▢▢"
          )
-         await query.message.edit_text(
+         await msg.message.edit_text(
              text="▣▣▢"
          )
-         await query.message.edit_text(
+         await msg.message.edit_text(
              text="▣▣▣"
          )
-         await query.message.edit_text(
-             text=START_MESSAGE.format(msg.from_user.mention)
-         ),
+         await msg.message.edit_text(
+             text=START_MESSAGE.format(msg.from_user.mention),
              reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("𝐂𝐑𝐄𝐀𝐓𝐎𝐑 🔰", url="https://t.me/Zinan00100")
                  ],[
