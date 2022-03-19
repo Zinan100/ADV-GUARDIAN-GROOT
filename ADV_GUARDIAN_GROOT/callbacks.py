@@ -11,16 +11,16 @@ START_MESSAGE = """𝐇𝐢 {},𝐈 𝐀𝐌 <a href=https://t.me/GROOT_ANNAN_MS
 @Client.on_callback_query()
 async def callback(bot, msg):
     if msg.data == "start":
-        await msg.message.edit_text(
+        await msg.message.edit(
             text="▣▢▢"
          )
-         await msg.message.edit_text(
+         await msg.message.edit(
              text="▣▣▢"
          )
-         await msg.message.edit_text(
+         await msg.message.edit(
              text="▣▣▣"
          )
-         await msg.message.edit_text(
+         await msg.message.edit(
              text=START_MESSAGE.format(msg.from_user.mention),
              reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("𝐂𝐑𝐄𝐀𝐓𝐎𝐑 🔰", url="https://t.me/Zinan00100")
