@@ -109,13 +109,10 @@ NOTE:
 
     elif msg.data == "cov":
         await msg.message.edit(
-            text="▣▢▢"
+            text="▣"
         )
         await msg.message.edit(
-            text="▣▣▢"
-        )
-        await msg.message.edit(
-            text="▣▣▣"
+            text="▣▢"
         )
         await msg.message.edit(
             text="""➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
