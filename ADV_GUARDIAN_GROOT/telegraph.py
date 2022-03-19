@@ -46,7 +46,8 @@ async def telegraph(client, message):
         await query.message.edit_text(
             text="▣▣▣"
         )
-            f"<b>Link:-</b>\n\n <code>https://telegra.ph{response[0]}</code>",
+        await query.message.edit_text(
+            text = f"<b>Link:-</b>\n\n <code>https://telegra.ph{response[0]}</code>",
             quote=True,
             reply_markup=InlineKeyboardMarkup(
             [
