@@ -65,11 +65,12 @@ async def callback(bot, msg):
         await msg.message.edit(
             text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>""",
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("𝙸𝙳", callback_data="info"),
-                InlineKeyboardButton("📸𝚃𝙴𝙻𝙴𝙶𝚁𝙰.𝙿𝙷", callback_data="tgra"),       
-                InlineKeyboardButton("🤒covid", callback_data="cov")
+                InlineKeyboardButton("𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗", callback_data="info"),
+                InlineKeyboardButton("𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚙𝚑", callback_data="tgra"),       
+                InlineKeyboardButton("𝙲𝚘𝚟𝚒𝚍", callback_data="cov")
                 ],[
-                InlineKeyboardButton("🖼️YT-THUMP", callback_data="ytth")
+                InlineKeyboardButton("𝚈𝚃-𝚃𝙷𝚄𝙼𝙿", callback_data="ytth"),
+                InlineKeyboardButton("𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳", callback_data="stid")
                 ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
