@@ -67,10 +67,10 @@ async def callback(bot, msg):
             text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙸𝙳", callback_data="info"),
-                InlineKeyboardButton("📸𝚃𝙴𝙻𝙴𝙶𝚁𝙰.𝙿𝙷📸", callback_data="tgra"),       
+                InlineKeyboardButton("📸𝚃𝙴𝙻𝙴𝙶𝚁𝙰.𝙿𝙷", callback_data="tgra"),       
                 InlineKeyboardButton("🤒covid", callback_data="cov")
                 ],[
-                InlineKeyboardButton("YT-THUMP", callback_data="ytth")
+                InlineKeyboardButton("🖼️YT-THUMP", callback_data="ytth")
                 ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
@@ -152,7 +152,7 @@ NOTE:
         )
         await msg.message.edit(
             text=script.YT_MESSAGE,
-            reply_markup=InlineKeyboardMarkup
+            reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
                )
