@@ -156,7 +156,7 @@ NOTE:
 𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
 
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
-/ytthumb https://youtu.be/UyzJ9KEoU0w""",
+<code>/ytthumb https://youtu.be/UyzJ9KEoU0w</code>""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
