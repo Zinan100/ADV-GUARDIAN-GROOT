@@ -170,7 +170,7 @@ To Get Sticker ID
  
   ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
  
-◉ Reply To Any Sticker [/stickerid]"""
+◉ Reply To Any Sticker [/stickerid]""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
                ]]
