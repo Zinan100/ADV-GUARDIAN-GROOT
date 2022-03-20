@@ -162,3 +162,17 @@ NOTE:
                ]]
                )
         )
+    elif msg.data == "stid"
+        await msg.message.edit(
+            text="""𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.
+• 𝐔𝐒𝐀𝐆𝐄
+To Get Sticker ID
+ 
+  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+ 
+◉ Reply To Any Sticker [/stickerid]"""
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
+               ]]
+               )
+        )
