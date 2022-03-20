@@ -1,6 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
 from pyrogram.types import CallbackQuery
+from script import script
 import random
 
 START_MESSAGE = """𝐇𝐢 {},𝐈 𝐀𝐌 <a href=https://t.me/GROOT_ANNAN_MS_BOT>𝐆𝐔𝐀𝐑𝐃𝐈𝐀𝐍 𝐆𝐑𝐎𝐎𝐓</a> 𝐈 𝐀𝐌 𝐒𝐏𝐄𝐂𝐈𝐀𝐋 𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐎𝐓 𝐈 𝐀𝐌 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐋𝐘 𝐔𝐒𝐄𝐃 𝐅𝐎𝐑 𝐒𝐄𝐑𝐈𝐄𝐄𝐒 𝐉𝐔𝐒𝐓 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 𝐀𝐍𝐃 𝐒𝐄𝐄 𝐌𝐘 𝐏𝐎𝐖𝐄𝐑𝐒❤️
@@ -135,9 +136,25 @@ NOTE:
                )
         )
  
-@Client.on_callback_query()
-async def cb(bot, msg):
-    if msg.data == "about":
+    elif msg.data == "about":
         await msg.answer("""𖣘𝐶𝑟𝑒𝑎𝑡𝑒𝑟 𝙕𝙄𝙉𝘼𝙉 𝙏𝙀𝘾𝙃 𝟚. 𝕆 [ᵒⁿˡⁱⁿᵉ]🇦🇹
 ✯𝐷𝑒𝑣 ᴇxᴀᴍ എഴുതാൻ പോകുന്നു
 ✵𝐵𝑜𝑡 𝙸𝙽𝙳𝙸𝙰𝙽""", show_alert=True)
+
+    elif msg.data == "ytth":
+        await msg.message.edit(
+            text="▣▢▢"
+        )
+        await msg.message.edit(
+            text="▣▣▢"
+        )
+        await msg.message.edit(
+            text="▣▣▣"
+        )
+        await msg.message.edit(
+            text=script.YT_MESSAGE,
+            reply_markup=InlineKeyboardMarkup
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="help")
+               ]]
+               )
+        )
