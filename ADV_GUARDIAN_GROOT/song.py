@@ -12,7 +12,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
-from yt_dlp import YoutubeDL
+from yt_dl import YoutubeDL
 import youtube_dl
 from youtube_search import YoutubeSearch
 import requests
