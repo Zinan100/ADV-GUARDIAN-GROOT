@@ -29,7 +29,7 @@ PHONE_NUMBER_TEXT = (
 
 
 
-@Client.on_message(filters.private & filters.command("start"))
+@Client.on_message(filters.private & filters.command("genstr"))
 async def generate_str(c, m):
     get_api_id = await c.ask(
         chat_id=m.chat.id,
@@ -175,84 +175,6 @@ async def generate_str(c, m):
         await client.stop()
     except:
         pass
-
-
-@Client.on_message(filters.private & filters.command("help"))
-async def help(c, m):
-    await help_cb(c, m, cb=False)
-
-
-@Client.on_callback_query(filters.regex('^help$'))
-async def help_cb(c, m, cb=True):
-    help_text = """**Hey You need Help??👨‍✈️**
-
-
->>>> Press the start button
-
->>>> Send Your API_ID when bot ask.
-
->>>> Then send your API_HASH when bot ask.
-
->>>> Send your mobile number.
-
->>>> Send the OTP reciveved to your numer in the format `1 2 3 4 5` (Give space b/w each digit)
-
->>>> (If you have two step verification send to bot if bot ask.)
-
-
-**NOTE:**
-
-If you made any mistake anywhere press /cancel and then press /start
-"""
-
-    buttons = [[
-        InlineKeyboardButton('📕 About', callback_data='about'),
-        InlineKeyboardButton('❌ Close', callback_data='close')
-    ]]
-    if cb:
-        await m.answer()
-        await m.message.edit(text=help_text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-    else:
-        await m.reply_text(text=help_text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True, quote=True)
-
-
-@Client.on_message(filters.private & filters.command("about"))
-async def about(c, m):
-    await about_cb(c, m, cb=False)
-
-
-@Client.on_callback_query(filters.regex('^about$'))
-async def about_cb(c, m, cb=True):
-    me = await c.get_me()
-    about_text = f"""**MY DETAILS:**
-
-__🤖 My Name:__ {me.mention(style='md')}
-    
-__📝 Language:__ [Python3](https://www.python.org/)
-
-__🧰 Framework:__ [Pyrogram](https://github.com/pyrogram/pyrogram)
-
-__👨‍💻 Developer:__ [𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬](https://t.me/Ns_AnoNymouS)
-
-__📢 Channel:__ [NS BOT UPDATES](https://t.me/Ns_bot_updates)
-
-__👥 Group:__ [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
-
-__🌐 Source Code:__ [Press Me 😋](https://github.com/Ns-AnoNymouS/string-session-generator-bot)
-
-__🚀 YouTube Channel:__ [Ns Bots](https://youtube.com/channel/UC9NnqJ63aSzv457iUMM06vQ)
-"""
-
-    buttons = [[
-        InlineKeyboardButton('💡 Help', callback_data='help'),
-        InlineKeyboardButton('❌ Close', callback_data='close')
-    ]]
-    if cb:
-        await m.answer()
-        await m.message.edit(about_text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-    else:
-        await m.reply_text(about_text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True, quote=True)
-
 
 @Client.on_callback_query(filters.regex('^close$'))
 async def close(c, m):
