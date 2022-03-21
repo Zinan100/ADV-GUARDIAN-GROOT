@@ -5,7 +5,7 @@ import asyncio
 
 from asyncio.exceptions import TimeoutError
 
-from pyrogram import filters, Client
+from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import (
     SessionPasswordNeeded, FloodWait,
