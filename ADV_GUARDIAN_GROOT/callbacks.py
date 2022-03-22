@@ -177,3 +177,8 @@ To Get Sticker ID
                ]]
                )
         )
+
+    elif query.data == "close_data":
+        await query.message.delete(
+            sticker="CAACAgUAAxkBAAID52I5UyHJhEFHXdFqpDavliAd4MG7AAKaAAPIlGQULGXh4VzvJWoeBA"
+        )
