@@ -179,8 +179,22 @@ To Get Sticker ID
         )
 
     elif msg.data == "close_data":
-        await msg.message.delete()
-        await message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAID52I5UyHJhEFHXdFqpDavliAd4MG7AAKaAAPIlGQULGXh4VzvJWoeBA") 
-        await asyncio.sleep(2)
-        await m.delete()
+        await msg.message.edit(
+            text="<b>𝙳𝚎𝚕𝚎𝚝𝚒𝚗𝚐</b>
+        )
+        await msg.message.edit(
+            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
+        )
+        await msg.message.edit(
+            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
+        )
+        await msg.message.edit(
+            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        )
+        await msg.message.edit(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        )
+        await msg.message.edit(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
+        )
+        await msg.message.delete()   
