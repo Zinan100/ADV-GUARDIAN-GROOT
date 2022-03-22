@@ -22,9 +22,13 @@ async def start_msg(bot, msg):
            )
     )
 
-@Client.on_callback_query()
-async def cb(bot, msg):
-    if msg.data == "about":
-        await msg.answer("""𖣘𝐶𝑟𝑒𝑎𝑡𝑒𝑟 𝙕𝙄𝙉𝘼𝙉 𝙏𝙀𝘾𝙃 𝟚. 𝕆 [ᵒⁿˡⁱⁿᵉ]🇦🇹
-✯𝐷𝑒𝑣 ᴇxᴀᴍ എഴുതാൻ പോകുന്നു
-✵𝐵𝑜𝑡 𝙸𝙽𝙳𝙸𝙰𝙽""", show_alert=True)
+
+
+@Client.on_message(filters.private & filters.command("id"))
+async def iid_msg(bot, msg):
+    await msg.message.reply_text(
+        text = f"""<b>𝚈𝙾𝚄𝚁 𝙸𝙳 𝙸𝚂 :</b> <code>{msg.from_user.id}</code>
+<b>𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴 :</b> <code>{msg.from_user.first_name}</code>
+<b>𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴 :</b> <code>{msg.from_user.last_name}</code>
+<b>𝚄𝚁𝙻 :</b> <code>https://t.me/{msg.from_user.username}</code>
+"""
