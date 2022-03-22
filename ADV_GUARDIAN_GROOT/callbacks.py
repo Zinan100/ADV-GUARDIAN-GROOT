@@ -178,7 +178,9 @@ To Get Sticker ID
                )
         )
 
-    elif query.data == "close_data":
-        await msg.message.delete(
-            sticker="CAACAgUAAxkBAAID52I5UyHJhEFHXdFqpDavliAd4MG7AAKaAAPIlGQULGXh4VzvJWoeBA"
-        )
+    elif msg.data == "close_data":
+        await msg.message.delete()
+        await message.reply_chat_action("Typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAID52I5UyHJhEFHXdFqpDavliAd4MG7AAKaAAPIlGQULGXh4VzvJWoeBA") 
+        await asyncio.sleep(2)
+        await m.delete()
