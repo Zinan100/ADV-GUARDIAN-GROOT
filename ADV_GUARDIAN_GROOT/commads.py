@@ -31,7 +31,7 @@ async def iid_msg(bot, msg):
 <b>𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴 :</b> <code>{msg.from_user.first_name}</code>
 <b>𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴 :</b> <code>{msg.from_user.last_name}</code>
 <b>𝚄𝚁𝙻 :</b> <code>https://t.me/{msg.from_user.username}</code>
-"""
+""",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("ᴄʟᴏꜱᴇ メ", callback_data="close_data")
            ]]
