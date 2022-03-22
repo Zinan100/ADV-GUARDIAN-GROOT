@@ -26,7 +26,7 @@ async def start_msg(bot, msg):
 
 @Client.on_message(filters.private & filters.command("id"))
 async def iid_msg(bot, msg):
-    await msg.message.reply_text(
+    await msg.reply_text(
         text = f"""<b>𝚈𝙾𝚄𝚁 𝙸𝙳 𝙸𝚂 :</b> <code>{msg.from_user.id}</code>
 <b>𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴 :</b> <code>{msg.from_user.first_name}</code>
 <b>𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴 :</b> <code>{msg.from_user.last_name}</code>
