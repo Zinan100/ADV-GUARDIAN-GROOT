@@ -137,7 +137,7 @@ NOTE:
  
     elif msg.data == "about":
         await msg.answer("""𖣘𝐶𝑟𝑒𝑎𝑡𝑒𝑟 𝙕𝙄𝙉𝘼𝙉 𝙏𝙀𝘾𝙃 𝟚. 𝕆 [ᵒⁿˡⁱⁿᵉ]🇦🇹
-✯𝐷𝑒𝑣 ᴇxᴀᴍ എഴുതാൻ പോകുന്നു
+✯𝐷𝑒𝑣 𝙏𝙂 𝙋𝙐𝙎𝙃𝙋𝘼 𝙍𝙀𝙅𝙐🇮🇳[OFFLINE]
 ✵𝐵𝑜𝑡 𝙸𝙽𝙳𝙸𝙰𝙽""", show_alert=True)
 
     elif msg.data == "ytth":
