@@ -180,7 +180,7 @@ To Get Sticker ID
 
     elif msg.data == "close_data":
         await msg.message.edit(
-            text="<b>𝙳𝚎𝚕𝚎𝚝𝚒𝚗𝚐</b>
+            text="<b>𝙳𝚎𝚕𝚎𝚝𝚒𝚗𝚐</b>"
         )
         await msg.message.edit(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
