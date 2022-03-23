@@ -30,6 +30,7 @@ async def callback(bot, msg):
                 InlineKeyboardButton("📚 𝐇𝐄𝐋𝐏 📚", callback_data="help"), 
                 InlineKeyboardButton("🤠 𝐀𝐁𝐎𝐔𝐓 🤠", callback_data="about")
                 ],[
+                InlineKeyboardButton("ʙʀᴀɪɴ ᴄʜᴇᴄᴋ🧠", callback_data="brain"),
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ❌️", callback_data="close_data")
                ]]
                )
@@ -208,7 +209,9 @@ To Get Sticker ID
         await msg.message.edit(
             text=random.choice(All_Message)
         )
-        await msg.delete()
+        await msg.edit(
+            text="ᴛyᴩᴇ /start ᴛᴏ ʙᴇɢɪɴ ᴀɢᴀɪɴ"
+        )
 
     elif msg.data == "song":
         await msg.message.edit(
@@ -226,6 +229,18 @@ Song Download Module, For Those Who Love Music
 Made By <a href=https://t.me/moviespot00100>ᴍꜱ ᴜᴩᴅᴀᴛᴇᴢ</a>""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
+               ]]
+               )
+        )
+    elif query msg.data == "brain":
+        await msg.message.edit(
+            text= f"""ʜɪ {msg.from_user.mention} ᴡᴇ ᴀʀᴇ ᴅᴇᴠᴏʟᴏᴩɪɴɢ ᴀ ɴᴇᴡ ꜰᴇᴜᴛᴜʀᴇ ʙʀᴀɪɴ ᴠʜᴇᴄᴋ ᴀɴᴅ ɪꜰ ᴀɴy ɪꜱꜱᴜᴇ ʀᴇᴩᴏʀᴛ ɪᴛ @Zinan00100.
+𝙒𝙝𝙖𝙩 𝙞𝙨 𝙩𝙝𝙚 𝙪𝙨𝙚 ? 
+   ᴛʜᴇ ᴜꜱᴇ ᴏꜰ ᴛʜɪꜱ ɪꜱ ᴛᴏ ᴋɴᴏᴡ yᴏᴜʀᴇ ᴅɪᴄᴛᴀᴛɪᴏʙ ᴩᴏᴡᴇʀ ᴀɴᴅ ᴄᴏɴᴄᴇɴᴅʀᴀᴛɪᴏ  ᴩᴏᴡᴇʀ
+𝙃𝙤𝙬 𝙬𝙞𝙡𝙡 𝙄 𝙪𝙨𝙚 𝙞𝙩 ?
+   ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ꜰᴇᴜᴛᴜʀᴇ yᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ɴᴀᴍᴇᴅ ᴛᴇꜱᴛ ᴍy ʙʀᴀɪɴ ᴀɴᴅ ᴀ ᴄᴏᴅᴇ ᴡɪʟʟ ᴩᴏᴩᴜᴩ ᴀɴᴅ ᴠᴀɴ8ꜱʜ ɪɴ 2 ꜱᴇᴄᴏɴᴅꜱ.""",
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("ᴛᴇꜱᴛ ᴍy ʙʀᴀɪɴ", callback_data="secode")
                ]]
                )
         )
