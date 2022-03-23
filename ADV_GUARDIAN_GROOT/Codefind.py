@@ -15,7 +15,5 @@ async def fil_mod(bot, msg):
 
       if args in mode_on:
           await m.edit("✅️You are correct")
-      elif args in mode_of:
-          await m.edit("❎️Wrong answer")
       else:
           await m.edit("❎️Wrong answer")
