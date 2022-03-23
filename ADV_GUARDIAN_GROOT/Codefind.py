@@ -32,6 +32,4 @@ async def fil_mod(bot, msg):
     await msg.reply_text(
         text=random.choice(All_Message)
     )
-    await msg.edit_message(
-        text="ᴛyᴩᴇ ᴛʜᴀᴛ ꜱʜᴏᴡɴ ᴄᴏᴅᴇ ᴡɪᴛʜ /ᴀɴꜱ <ᴄᴏᴅᴇ>"
-    )
+    await msg.delete()
