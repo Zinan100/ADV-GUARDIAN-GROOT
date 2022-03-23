@@ -213,7 +213,7 @@ To Get Sticker ID
         await msg.message.edit(
             text=random.choice(All_Message)
         )
-        await msg.edit(
+        await msg.message.edit(
             text="ᴛyᴩᴇ /start ᴛᴏ ʙᴇɢɪɴ ᴀɢᴀɪɴ"
         )
 
