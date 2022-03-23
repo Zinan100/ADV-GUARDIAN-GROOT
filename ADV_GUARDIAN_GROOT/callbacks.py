@@ -65,12 +65,13 @@ async def callback(bot, msg):
         await msg.message.edit(
             text= f"""HEY {msg.from_user.mention} HERE IS THE HELP FOR <a href=https://t.me/GROOT_ANNAN_MS_BOT>GUARDIAN GROOT</a>""",
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗", callback_data="info"),
-                InlineKeyboardButton("𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚙𝚑", callback_data="tgra"),       
-                InlineKeyboardButton("𝙲𝚘𝚟𝚒𝚍", callback_data="cov")
+                InlineKeyboardButton("ɪᴅ & ɪɴꜰᴏ", callback_data="info"),
+                InlineKeyboardButton("ᴛᴇʟᴇɢʀᴀᴩʜ", callback_data="tgra"),       
+                InlineKeyboardButton("ᴄᴏᴠɪᴅ", callback_data="cov")
                 ],[
-                InlineKeyboardButton("𝚈𝚃-𝚃𝙷𝚄𝙼𝙿", callback_data="ytth"),
-                InlineKeyboardButton("𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳", callback_data="stid")
+                InlineKeyboardButton("yᴛ ᴛʜᴜᴍᴩ", callback_data="ytth"),
+                InlineKeyboardButton("ꜱᴛɪᴄᴋᴇʀ ɪᴅ", callback_data="stid"),
+                InlineKeyboardButton("ꜱᴏɴɢ", callback_data="song")
                 ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
                ]]
@@ -205,3 +206,23 @@ To Get Sticker ID
             text=random.choice(All_Message)
         )
         await msg.delete()
+
+    elif msg.data == "song"
+        await msg.message.edit(
+            text="""🎼Song Download🎼
+Song Download Module, For Those Who Love Music
+
+🎈 Command 🎈
+
+- /song [Song Name] - To Download Music 😁
+
+🌀Usage🌀
+- Can Be Used By Everyone
+- Works in bot pm
+
+Made By <a href=https://t.me/moviespot00100>ᴍꜱ ᴜᴩᴅᴀᴛᴇᴢ</a>""",
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"
+               ]]
+               )
+        )
