@@ -27,9 +27,4 @@ async def fil_mod(bot, msg):
 
 
 
-@Client.on_message(filters.command("seccode"))
-async def fil_mod(bot, msg):
-    await msg.reply_text(
-        text=random.choice(All_Message)
-    )
-    await msg.delete()
+
