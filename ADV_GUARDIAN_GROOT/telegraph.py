@@ -7,10 +7,7 @@ from plugins.helper_functions.cust_p_filters import f_onw_fliter
 from plugins.helper_functions.get_file_id import get_file_id
 
 
-@Client.on_message(
-    filters.command("telegraph") &
-    f_onw_fliter
-)
+@Client.on_message(filters.command("telegraph") & f_onw_fliter)
 async def telegraph(client, message):
     replied = message.reply_to_message
     if not replied:
