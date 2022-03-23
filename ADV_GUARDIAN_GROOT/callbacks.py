@@ -28,7 +28,9 @@ async def callback(bot, msg):
                 InlineKeyboardButton("💢 𝐌𝐎𝐕𝐈𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏💢", url="https://t.me/moviespot001100")
                 ],[
                 InlineKeyboardButton("📚 𝐇𝐄𝐋𝐏 📚", callback_data="help"), 
-                InlineKeyboardButton("🤠 𝐀𝐁𝐎𝐔𝐓 🤠", callback_data="about") 
+                InlineKeyboardButton("🤠 𝐀𝐁𝐎𝐔𝐓 🤠", callback_data="about")
+                ],[
+                InlineKeyboardButton("ᴄʟᴏꜱᴇ❌️", callback_data="close_data")
                ]]
                )
         )
@@ -73,7 +75,8 @@ async def callback(bot, msg):
                 InlineKeyboardButton("ꜱᴛɪᴄᴋᴇʀ ɪᴅ", callback_data="stid"),
                 InlineKeyboardButton("ꜱᴏɴɢ", callback_data="song")
                 ],[
-                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start") 
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start"),
+                InlineKeyboardButton("ᴄʟᴏꜱᴇ❌️", callback_data="close_data")
                ]]
                ) 
         )
