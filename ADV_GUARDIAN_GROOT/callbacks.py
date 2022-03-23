@@ -197,4 +197,11 @@ To Get Sticker ID
         await msg.message.edit(
             text="<b>𝙲𝙻𝙾𝚂𝙸𝙽𝙶 𝙸𝙽 𝙿𝚁𝙾𝙶𝚁𝙴𝚂𝚂</b>⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
-        await msg.message.delete()   
+        await msg.message.delete()  
+
+
+    elif msg.data == "secode":
+        await msg.message.edit(
+            text=random.choice(All_Message)
+        )
+        await msg.delete()
