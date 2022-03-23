@@ -10,7 +10,7 @@ async def fil_mod(bot, msg):
       try:
          args = msg.text.split(None, 1)[1].lower()
       except:
-         return await message.reply("checking answer")
+         return await msg.reply("checking answer")
       m = await msg.reply_text("checking answer in progress")
 
       if args in mode_on:
