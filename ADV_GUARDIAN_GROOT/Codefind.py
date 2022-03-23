@@ -29,9 +29,9 @@ async def fil_mod(bot, msg):
 
 @Client.on_message(filters.command("seccode"))
 async def fil_mod(bot, msg):
-    await msg.message.reply_text(
+    await msg.reply_text(
         text=random.choice(All_Message)
     )
-    await msg.message.edit(
+    await msg.edit(
         text="ᴛyᴩᴇ ᴛʜᴀᴛ ꜱʜᴏᴡɴ ᴄᴏᴅᴇ ᴡɪᴛʜ /ᴀɴꜱ <ᴄᴏᴅᴇ>"
     )
