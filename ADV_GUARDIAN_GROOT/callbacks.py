@@ -210,7 +210,7 @@ To Get Sticker ID
         )
         await msg.delete()
 
-    elif msg.data == "song"
+    elif msg.data == "song":
         await msg.message.edit(
             text="""🎼Song Download🎼
 Song Download Module, For Those Who Love Music
