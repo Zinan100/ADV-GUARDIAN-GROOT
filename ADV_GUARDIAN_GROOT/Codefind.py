@@ -2,16 +2,16 @@ from pyrogram import Client, filters
 import random
 
 All_Message = [
-    "18yg12",
-    "182cd2",
-    "18gffvj"
+    "18yftdgehgeg12",
+    "182hehehejwcd2",
+    "18gfeyeyyeyfvj"
 ]
 
 
 
 @Client.on_message(filters.command("ans"))
 async def fil_mod(bot, msg):
-      mode_on = ["18gffvj", "182cd2", "18yg12"]
+      mode_on = ["18yftdgehgeg12", "182hehehejwcd2", "18gfeyeyyeyfvj"]
       mode_of = ["vvgg", "shvdd", "ggffgy"]
 
       try:
