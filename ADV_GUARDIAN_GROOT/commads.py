@@ -19,7 +19,7 @@ async def start_msg(bot, msg):
             InlineKeyboardButton("📚 𝐇𝐄𝐋𝐏 📚", callback_data="help"), 
             InlineKeyboardButton("🤠 𝐀𝐁𝐎𝐔𝐓 🤠", callback_data="about")
             ],[
-            InlineKeyboardButton("ʜᴏᴡ ꜰᴀꜱᴛ ɪꜱ yᴏᴜʀ ʙʀᴀɪɴ", callback_data="brain"),
+            InlineKeyboardButton("ʙʀᴀɪɴ ᴄʜᴇᴄᴋ🧠", callback_data="brain"),
             InlineKeyboardButton("ᴄʟᴏꜱᴇ❌️", callback_data="close_data")
            ]]
            )
