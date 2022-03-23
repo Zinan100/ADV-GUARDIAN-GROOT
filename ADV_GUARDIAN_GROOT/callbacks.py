@@ -225,7 +225,7 @@ Song Download Module, For Those Who Love Music
 
 Made By <a href=https://t.me/moviespot00100>ᴍꜱ ᴜᴩᴅᴀᴛᴇᴢ</a>""",
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
                ]]
                )
         )
