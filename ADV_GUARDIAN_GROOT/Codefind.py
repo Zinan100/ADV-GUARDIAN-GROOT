@@ -1,4 +1,11 @@
 from pyrogram import Client, filters
+import random
+
+All_Message = [
+    "18yg12",
+    "182cd2",
+    "18gffvj"
+]
 
 
 
@@ -17,3 +24,14 @@ async def fil_mod(bot, msg):
           await m.edit("✅️You are correct")
       else:
           await m.edit("❎️Wrong answer")
+
+
+
+@Client.on_message(filters.command("seccode"))
+async def fil_mod(bot, msg):
+    await msg.message.reply_text(
+        text=random.choice(All_Message)
+    )
+    await msg.message.edit(
+        text="ᴛyᴩᴇ ᴛʜᴀᴛ ꜱʜᴏᴡɴ ᴄᴏᴅᴇ ᴡɪᴛʜ /ᴀɴꜱ <ᴄᴏᴅᴇ>"
+    )
