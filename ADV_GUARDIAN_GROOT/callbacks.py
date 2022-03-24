@@ -81,6 +81,8 @@ async def callback(bot, msg):
                 InlineKeyboardButton("ꜱᴛɪᴄᴋᴇʀ ɪᴅ", callback_data="stid"),
                 InlineKeyboardButton("ꜱᴏɴɢ", callback_data="song")
                 ],[
+                InlineKeyboardButton("ᴛᴛꜱ", callback_data="tts")
+                ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start"),
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ❌️", callback_data="close_data")
                ]]
