@@ -14,14 +14,14 @@ async def start_msg(bot, msg):
             if user.status == "kicked out":
                 await msg.reply_text("yᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ꜰʀᴏᴍ ᴛɢᴇ ᴄʜᴀɴɴᴇʟ")
                 return
-         expect UserNotParticipant
-           await msg.reply_text(
-               text="yᴏᴜ ᴅɪᴅɴᴛ ꜱᴜʙᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ ꜱᴜʙꜱᴄʀɪʙᴇᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ",
-               reply_markup=InlineKeyboardMarkup( [[
-                   InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢", url=f"t.me/{Force}")
-                  ]]
-                  )
-           )
+        expect UserNotParticipant
+          await msg.reply_text(
+              text="yᴏᴜ ᴅɪᴅɴᴛ ꜱᴜʙᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ ꜱᴜʙꜱᴄʀɪʙᴇᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ",
+              reply_markup=InlineKeyboardMarkup( [[
+                  InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢", url=f"t.me/{Force}")
+                 ]]
+                 )
+          )
 
     await msg.reply_photo(
         photo="https://telegra.ph/file/cfcb2df74d7ac1e022084.jpg",
