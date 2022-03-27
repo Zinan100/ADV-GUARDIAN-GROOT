@@ -240,6 +240,7 @@ Made By <a href=https://t.me/moviespot00100>ᴍꜱ ᴜᴩᴅᴀᴛᴇᴢ</a>""",
                ]]
                )
         )
+   
     elif msg.data == "brain":
         await msg.message.edit(
             text= f"""ʜɪ {msg.from_user.mention} ᴡᴇ ᴀʀᴇ ᴅᴇᴠᴏʟᴏᴩɪɴɢ ᴀ ɴᴇᴡ ꜰᴇᴜᴛᴜʀᴇ ʙʀᴀɪɴ ᴠʜᴇᴄᴋ ᴀɴᴅ ɪꜰ ᴀɴy ɪꜱꜱᴜᴇ ʀᴇᴩᴏʀᴛ ɪᴛ @Zinan00100.
@@ -268,23 +269,8 @@ NOTE:
 • These commands works on both pm and group.
 • IMDb can translate texts to 200+ languages.
 """,
-           reply_InlineKeyboardMarkup( [[
-               InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
-              ]]
-              )
+            reply_InlineKeyboardMarkup( [[
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
+               ]]
+               )
         )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
