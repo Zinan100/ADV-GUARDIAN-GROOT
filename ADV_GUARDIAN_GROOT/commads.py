@@ -14,7 +14,7 @@ async def start_msg(bot, msg):
             if user.status == "kicked out":
                 await msg.reply_text("yᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ꜰʀᴏᴍ ᴛɢᴇ ᴄʜᴀɴɴᴇʟ")
                 return
-        expect UserNotParticipant
+        expect UserNotParticipant:
           await msg.reply_text(
               text="yᴏᴜ ᴅɪᴅɴᴛ ꜱᴜʙᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ ꜱᴜʙꜱᴄʀɪʙᴇᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ",
               reply_markup=InlineKeyboardMarkup( [[
