@@ -287,7 +287,7 @@ NOTE:
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/short https://youtu.be/kB9TkCs8cX0"""
+/short https://youtu.be/kB9TkCs8cX0""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
                ]]
