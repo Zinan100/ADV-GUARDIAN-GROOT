@@ -81,7 +81,8 @@ async def callback(bot, msg):
                 InlineKeyboardButton("ꜱᴛɪᴄᴋᴇʀ ɪᴅ", callback_data="stid"),
                 InlineKeyboardButton("ꜱᴏɴɢ", callback_data="song")
                 ],[
-                InlineKeyboardButton("ᴛᴛꜱ", callback_data="tts")
+                InlineKeyboardButton("ᴛᴛꜱ", callback_data="tts"),
+                InlineKeyboardButton("ᴜʀʟ-ꜱʜᴏʀᴛ"), callback_data="url")
                 ],[
                 InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data="start"),
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ❌️", callback_data="close_data")
@@ -274,4 +275,23 @@ NOTE:
                ]]
                )
         )
+
+    elif msg.data == "url":
+        await msg.message.edit(
+            text="""➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
+
+𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+
+➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
+
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+/short https://youtu.be/kB9TkCs8cX0"""
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
+               ]]
+               )
+        )
+
     
