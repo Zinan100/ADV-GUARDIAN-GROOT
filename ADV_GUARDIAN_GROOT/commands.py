@@ -22,6 +22,8 @@ async def start_msg(bot, msg):
                  ]]
                  )
           )
+          return
+
 
     await msg.reply_photo(
         photo="https://telegra.ph/file/cfcb2df74d7ac1e022084.jpg",
