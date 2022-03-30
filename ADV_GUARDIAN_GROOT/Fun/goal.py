@@ -8,10 +8,7 @@ GOAL_E_MOJI = "⚽"
 # EMOJI CONSTANTS
 
 
-@Client.on_message(
-    filters.command(["goal", "shoot"], COMMAND_HAND_LER) &
-    f_onw_fliter
-)
+@Client.on_message(filters.command(["goal", "shoot"]))
 async def roll_dice(client, message):
     """ @Goal """
     rep_mesg_id = message.message_id
