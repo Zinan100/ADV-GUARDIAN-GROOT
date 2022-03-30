@@ -8,10 +8,7 @@ DICE_E_MOJI = "🎲"
 # EMOJI CONSTANTS
 
 
-@Client.on_message(
-    filters.command(["roll", "dice"], COMMAND_HAND_LER) &
-    f_onw_fliter
-)
+@Client.on_message(filters.command(["roll", "dice"]))
 async def roll_dice(client, message):
     """ @RollaDie """
     rep_mesg_id = message.message_id
