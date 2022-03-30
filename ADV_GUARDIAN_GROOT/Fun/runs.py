@@ -36,10 +36,7 @@ RUN_STRINGS = (
 )
 
 
-@Client.on_message(
-    filters.command("runs", COMMAND_HAND_LER) &
-    f_onw_fliter
-)
+@Client.on_message(filters.command("runs"))
 async def runs(_, message):
     """ /runs strings """
     effective_string = random.choice(RUN_STRINGS)
