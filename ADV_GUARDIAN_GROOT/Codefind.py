@@ -4,16 +4,16 @@ import asyncio
 from asyncio import sleep
 
 ALL_MESSAGE = [
-    "18yftdgehgeg12",
-    "182hehehejwcd2",
-    "18gfeyeyyeyfvj"
+    "18yftd gehgeg12",
+    "182heh ehejwcd2",
+    "18gfey eyyeyfvj"
 ]
 
 
 
 @Client.on_message(filters.command("ans"))
 async def fil_mod(bot, msg):
-      mode_on = ["18yftdgehgeg12", "182hehehejwcd2", "18gfeyeyyeyfvj"]
+      mode_on = ["18yftd gehgeg12", "182heh ehejwcd2", "18gfey eyyeyfvj"]
       mode_of = ["vvgg", "shvdd", "ggffgy"]
 
       try:
