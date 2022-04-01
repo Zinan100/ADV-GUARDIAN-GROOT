@@ -216,11 +216,15 @@ To Get Sticker ID
 
     elif msg.data == "secode":
         await msg.message.edit(
-            text=random.choice(All_Message)
+            text=random.choice(ALL_MESSAGE)
         )
         await asyncio.sleep(2)
         await msg.message.edit(
-            text="ᴛyᴩᴇ /start ᴛᴏ ʙᴇɢɪɴ ᴀɢᴀɪɴ"
+            text="ᴩʀᴇꜱꜱ ʜᴏᴍᴇ ᴛᴏ ɢᴏ ʙᴀᴄᴋ",
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("🏠ʜᴏᴍᴇ🏠", callback_data="start")
+               ]]
+               )
         )
 
     elif msg.data == "song":
