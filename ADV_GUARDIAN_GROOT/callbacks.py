@@ -197,9 +197,6 @@ To Get Sticker ID
             text="<b>𝙲𝙻𝙾𝚂𝙸𝙽𝙶</b>"
         )
         await msg.message.edit(
-            text="<b>𝙲𝙻𝙾𝚂𝙸𝙽𝙶</b>✮✯✯"
-        )
-        await msg.message.edit(
             text="<b>𝙲𝙻𝙾𝚂𝙸𝙽𝙶 𝙸𝙽 𝙿𝚁𝙾𝙶𝚁𝙴𝚂𝚂</b>✮✮✯"
         )
         await msg.message.edit(
