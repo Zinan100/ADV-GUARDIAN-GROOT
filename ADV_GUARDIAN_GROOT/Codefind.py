@@ -1,7 +1,9 @@
 from pyrogram import Client, filters
 import random
+import asyncio
+from asyncio import sleep
 
-All_Message = [
+ALL_MESSAGE = [
     "18yftdgehgeg12",
     "182hehehejwcd2",
     "18gfeyeyyeyfvj"
