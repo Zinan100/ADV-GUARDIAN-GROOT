@@ -10,3 +10,13 @@ async def Ban_users(bot, msg):
     except:
         pass
     await msg.reply_text("⚙️ᴜꜱᴇʀ ʜᴀꜱ ʙᴇᴇɴ ʙᴀɴᴇᴅ⚙️")
+
+@Ban.on_message(filters.command("ban"))
+async def Ban_users(bot, msg):
+    user_id = msg.reply_to_message.from_user.id
+    chat_id = msg.chat.id
+    try:
+        await bot.unban_chat_member(chat_id, user_id)
+    except:
+        pass
+    await msg.reply_text("⚙️ᴜꜱᴇʀ ʜᴀꜱ ʙᴇᴇɴ ʙᴀɴᴇᴅ⚙️")
