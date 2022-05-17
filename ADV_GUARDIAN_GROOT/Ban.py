@@ -21,13 +21,3 @@ async def unban_users(bot, msg):
         pass
     await msg.reply_text("ഒരു തവണ ഷമിച്ചു ഇനി മേലാ ഇത് ആവർത്തിക്കരുത്")
 
-@Ms_officials.on_message(filters.command("mute"))
-async def mute_users(bot, msg):
-    user_id = msg.reply_to_message.from_user.id
-    chat_id = msg.chat.id
-    try:
-        await bot.mute_chat_member(chat_id, user_id)
-    except:
-        pass
-    await msg.reply_text("കുറച്ചു നേരം മിണ്ടാതിരിക്ക്")
-
