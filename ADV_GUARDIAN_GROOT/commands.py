@@ -4,27 +4,9 @@ from pyrogram.errors import UserNotParticipant
 
 START_MESSAGE = """𝐇𝐢 {},𝐈 𝐀𝐌 <a href=https://t.me/GROOT_ANNAN_MS_BOT>𝐆𝐔𝐀𝐑𝐃𝐈𝐀𝐍 𝐆𝐑𝐎𝐎𝐓</a> 𝐈 𝐀𝐌 𝐒𝐏𝐄𝐂𝐈𝐀𝐋 𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐎𝐓 𝐈 𝐀𝐌 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐋𝐘 𝐔𝐒𝐄𝐃 𝐅𝐎𝐑 𝐒𝐄𝐑𝐈𝐄𝐄𝐒 𝐉𝐔𝐒𝐓 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 𝐀𝐍𝐃 𝐒𝐄𝐄 𝐌𝐘 𝐏𝐎𝐖𝐄𝐑𝐒❤️
 """
-Force = "MS_OFFICIALS"
 
 @Client.on_message(filters.command("start"))
 async def start_msg(bot, msg):
-    if Force:
-        try:
-            user = await bot.get_chat_member(Force, msg.from_user.id)
-            if user.status == "kicked out":
-                await msg.reply_text("yᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ꜰʀᴏᴍ ᴛɢᴇ ᴄʜᴀɴɴᴇʟ")
-                return
-        except UserNotParticipant:
-          await msg.reply_text(
-              text="yᴏᴜ ᴅɪᴅɴᴛ ꜱᴜʙᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ ꜱᴜʙꜱᴄʀɪʙᴇᴇᴅ ᴍy ᴄʜᴀɴɴᴇʟ",
-              reply_markup=InlineKeyboardMarkup( [[
-                  InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢", url=f"t.me/{Force}")
-                 ]]
-                 )
-          )
-          return
-
-
     await msg.reply_photo(
         photo="https://telegra.ph/file/cfcb2df74d7ac1e022084.jpg",
         caption=START_MESSAGE.format(msg.from_user.mention),
