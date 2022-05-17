@@ -9,7 +9,8 @@ async def Ban_users(bot, msg):
         await bot.ban_chat_member(chat_id, user_id)
     except:
         pass
-    await msg.reply_text("⚙️ᴜꜱᴇʀ ʜᴀꜱ ʙᴇᴇɴ ʙᴀɴᴇᴅ⚙️")
+    await msg.reply_text("""Another one bites the dust...!
+Banned {msg.reply_to_message.from_user.mention}.""")
 
 @Ban.on_message(filters.command("ban"))
 async def Ban_users(bot, msg):
