@@ -1,7 +1,7 @@
-from pyrogram import filters, Client as Ban
+from pyrogram import filters, Client as MS_OFFICIALS 
 from time import time
 
-@Ban.on_message(filters.command("ban"))
+@MS_OFFICIALS.on_message(filters.command("ban"))
 async def ban_users(bot, msg):
     user_id = msg.reply_to_message.from_user.id
     chat_id = msg.chat.id
@@ -11,7 +11,7 @@ async def ban_users(bot, msg):
         pass
     await msg.reply_text("Another one bites the dust...!")
 
-@Ban.on_message(filters.command("unban"))
+@MS_OFFICIALS.on_message(filters.command("unban"))
 async def unban_users(bot, msg):
     user_id = msg.reply_to_message.from_user.id
     chat_id = msg.chat.id
