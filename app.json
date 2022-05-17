@@ -21,7 +21,7 @@
         "API_HASH": {
             "description": "Get this value from https://youtu.be/5eEsvLAKVc0 or @MT_MytelegramOrg_Bot",
             "value": ""
-        },        
+        }     
     },
     "addons": [],
     "buildpacks": [
