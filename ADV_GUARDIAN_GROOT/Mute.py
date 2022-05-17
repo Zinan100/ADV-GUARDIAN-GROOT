@@ -9,4 +9,4 @@ async def mute_users(bot, msg):
         await bot.Chat.restrict_member(user_id, ChatPermissions())
     except:
         pass
-    await msg.reply_text("Another one bites the dust...!")
+    await msg.reply_text("കുറച്ചു സമയം പോയി മിണ്ടാതിരി. ഇനി എപ്പോ സംസാരിക്കാൻ പറ്റും എന്ന് എനിക്ക് ക്കൂടി അറിഞ്ഞൂടാ")
