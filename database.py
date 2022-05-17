@@ -1,6 +1,7 @@
 import pymongo 
 import os
 
+DB_URL = os.environ.get("DB_URL","mongodb+srv://rr:rr@cluster0.ccfsu.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DB_NAME","Cloud19")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
