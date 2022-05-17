@@ -8,7 +8,7 @@ PyrogramBot = Client(
     plugins=dict(root="ADV_GUARDIAN_GROOT")
 )
 
-
+print = "🤩BOT ON POWER🤩"
 
 
 PyrogramBot.run()
