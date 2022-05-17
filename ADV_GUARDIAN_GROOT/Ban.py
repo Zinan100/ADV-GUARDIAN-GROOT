@@ -3,6 +3,9 @@ from time import time
 
 @Ms_officials.on_message(filters.command("ban"))
 async def ban_users(bot, msg):
+    is_admin = await admin_check(message)
+    if not is_admin:
+        return
     user_id = msg.reply_to_message.from_user.id
     chat_id = msg.chat.id
     try:
