@@ -7,8 +7,8 @@
       "best",
       "bot"
     ],
-    "website": "https://youtube.com/c/MoTech_YT",
-    "repository": "https://github.com/Zinan100/ADV-GUARDIAN-GROOT",
+    "website": "https://github.com/Zinan100",
+    "repository": "/ADV-GUARDIAN-GROOT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot Token From https://youtu.be/cB4UduCcNWs",
@@ -21,11 +21,7 @@
         "API_HASH": {
             "description": "Get this value from https://youtu.be/5eEsvLAKVc0 or @MT_MytelegramOrg_Bot",
             "value": ""
-        },
-        "DATABASE_URI": {
-            "description": "Mongodb from https://youtu.be/gBLTsH-IXr0",
-            "value": ""
-        }
+        },        
     },
     "addons": [],
     "buildpacks": [
