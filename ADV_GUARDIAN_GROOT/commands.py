@@ -10,7 +10,7 @@ START_MESSAGE = """𝐇𝐢 {},𝐈 𝐀𝐌 <a href=https://t.me/GROOT_ANNAN_MS
 
 @Client.on_message(filters.command("start"))
 async def start_msg(bot, msg):
-    insert(int(message.chat.id))
+    insert(int(msg.chat.id))
     await msg.reply_photo(
         photo="https://telegra.ph/file/cfcb2df74d7ac1e022084.jpg",
         caption=START_MESSAGE.format(msg.from_user.mention),
