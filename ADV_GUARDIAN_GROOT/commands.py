@@ -1,15 +1,16 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
-from database import insert
+from database import insert, getid
+from config import ADMIN
 
 
 START_MESSAGE = """𝐇𝐢 {},𝐈 𝐀𝐌 <a href=https://t.me/GROOT_ANNAN_MS_BOT>𝐆𝐔𝐀𝐑𝐃𝐈𝐀𝐍 𝐆𝐑𝐎𝐎𝐓</a> 𝐈 𝐀𝐌 𝐒𝐏𝐄𝐂𝐈𝐀𝐋 𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐎𝐓 𝐈 𝐀𝐌 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐋𝐘 𝐔𝐒𝐄𝐃 𝐅𝐎𝐑 𝐒𝐄𝐑𝐈𝐄𝐄𝐒 𝐉𝐔𝐒𝐓 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 𝐀𝐍𝐃 𝐒𝐄𝐄 𝐌𝐘 𝐏𝐎𝐖𝐄𝐑𝐒❤️
 """
 
 @Client.on_message(filters.command("start"))
-async def start_msg(bot, msg: Message):
-    insert(int(msg.chat.id))
+async def start_msg(bot, msg):
+    insert(int(message.chat.id))
     await msg.reply_photo(
         photo="https://telegra.ph/file/cfcb2df74d7ac1e022084.jpg",
         caption=START_MESSAGE.format(msg.from_user.mention),
@@ -42,3 +43,23 @@ async def iid_msg(bot, msg):
            ]]
            )
     )
+
+@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["broadcast"]))
+async def broadcast(bot, message):
+ if (message.reply_to_message):
+   ms = await message.reply_text("Geting All ids from database ...........")
+   ids = getid()
+   tot = len(ids)
+   await ms.edit(f"Starting Broadcast .... \n Sending Message To {tot} Users")
+   for id in ids:
+     try:
+     	await message.reply_to_message.copy(id)
+     except:
+     	pass
+
+@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["users"]))
+async def get_users(client: Client, message: Message):    
+    msg = await client.send_message(chat_id=message.chat.id, text=WAIT_MSG)
+    ids = getid()
+    tot = len(ids)
+    await msg.edit(f"Total uses = {tot}")
